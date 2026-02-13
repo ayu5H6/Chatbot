@@ -1,4 +1,4 @@
-import "dotenv/config"; // <--- THIS MUST BE LINE 1
+import "dotenv/config"; 
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -12,5 +12,5 @@ app.use("/api/chat", chatRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)
-  .then(() => app.listen(5000))
+  .then(() => app.listen("https://chatbot-zdla.onrender.com"))
   .catch(console.error);
