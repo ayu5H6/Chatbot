@@ -12,5 +12,5 @@ app.use("/api/chat", chatRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)
-  .then(() => app.listen("https://chatbot-zdla.onrender.com"))
+  .then(() => app.listen(5000))
   .catch(console.error);
