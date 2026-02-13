@@ -16,7 +16,7 @@ export default function App() {
   const [typing, setTyping] = useState(false);
 
   useEffect(() => {
-    api.get(`/chat/${sessionId}`).then((res) => setMessages(res.data));
+    api.get(`/${sessionId}`).then((res) => setMessages(res.data));
   }, []);
 
   const send = async () => {
@@ -25,7 +25,7 @@ export default function App() {
     setMessages((m) => [...m, { role: "user", content: input }]);
     setTyping(true);
 
-    const res = await api.post("/chat", {
+    const res = await api.post("/", {
       sessionId,
       message: input,
     });
