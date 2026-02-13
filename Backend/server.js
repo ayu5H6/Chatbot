@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/api/chat", chatRoutes);
+app.use("/chat", chatRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)
