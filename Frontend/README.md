@@ -51,42 +51,6 @@ MongoDB (Chat History)
 
 ---
 
-## Project Structure
-
-
-
-mern-ai-chatbot/
-├─ backend/
-│ ├─ models/Chat.js
-│ ├─ routes/chat.js
-│ ├─ services/ai.js
-│ ├─ server.js
-│ └─ .env
-└─ frontend/
-├─ src/
-│ ├─ App.jsx
-│ ├─ api.js
-│ └─ index.css
-└─ tailwind.config.js
-
-
----
-
-## Environment Variables
-
-Create a `.env` file inside the `backend` folder.
-
-
-
-MONGO_URI=mongodb://localhost:27017/chatbot
-GEMINI_KEY=your_gemini_api_key_here
-
-
-- API key must be generated from **Google AI Studio**
-- No key restrictions should be applied
-
----
-
 ## Setup Instructions
 
 ### Backend
